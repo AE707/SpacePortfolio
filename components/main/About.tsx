@@ -81,7 +81,7 @@ const About = () => {
                     )}
                 </InView>
             </div>
-            <div <div className="absolute z-[20] bottom-[-2rem] md:bottom-[20px] md:top-[850px] px-[5px]">
+            <div className="absolute z-[20] bottom-[-2rem] md:bottom-[20px] md:top-[850px] px-[5px]">
                 <div className="cursive text-[20px] font-medium text-center text-gray-300">
                     Shaping Tomorrow with Code and Creativity
                 </div>
