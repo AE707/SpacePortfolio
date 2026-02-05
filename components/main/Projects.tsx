@@ -13,7 +13,7 @@ const Projects = () => {
                 <ProjectCard
                     src="https://raw.githubusercontent.com/AE707/FlarpyBloarb/main/Assets/Screenshots/GamePlay.gif"
               title="FlarpyBloarb - Flappy Bird Clone"
-                    description="description="Unity 2D casual game inspired by Flappy Bird. Built with C# focusing on gameplay mechanics, physics-based movement, and clean code structure."
+                    description="Unity 2D casual game inspired by Flappy Bird. Built with C# focusing on gameplay mechanics, physics-based movement, and clean code structure."
                 />
                 <ProjectCard
                     src="/CardImage.png"
