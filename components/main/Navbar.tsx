@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Navbar = () => {
     return (
-        <div className="w-screen md:w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10 m-0 max-w-[1855px] items-center rounded-full">
+        <div className="w-screen md:w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-4 md:px-10 m-0 max-w-[1855px] items-center rounded-full">
             <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[0px] md:px-[10px]">
                 <a
                     href="#home"
@@ -17,7 +17,7 @@ const Navbar = () => {
                         className="cursor-pointer hover:animate-spin w-10"
                     />
 
-                    <span className="font-bold ml-[10px] block text-gray-300 z-50 md:text-lg text-xl">
+                    <span className="font-bold ml-[10px] block text-gray-300 z-50 text-sm md:text-lg text-xl">
                         Alaa ElGhoul
                     </span>
                 </a>
