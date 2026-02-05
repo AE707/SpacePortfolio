@@ -1,7 +1,29 @@
+export const HeroSkills = [
+    { name: "Platfermio",
+         icon: "/PlatformIO_logo.png" },
+  { name: "JavaScript",
+     icon: "/js.png" },
+  { name: "TypeScript",
+     icon: "/ts.png" },
+  { name: "Python", 
+    icon: "/Python-Dark.svg" },
+  { name: "VS Code",
+     icon: "/vscode.png" },
+  { name: "GitHub",
+     icon: "/github.png" },
+  { name: "Django",
+     icon: "/django.png" },
+  { name: "Unity",
+     icon: "/unity.png" },
+  { name: "C#",
+     icon: "/csharp.png" },
+  // Add more as needed
+];
+
 export const Skill_data = [
     {
-        skill_name: "Html 5",
-        Image: "/html.png",
+        skill_name: "Platformio",
+        Image: "/PlatformIO_logo.png",
         width: 80,
         height: 80,
     },
@@ -98,7 +120,7 @@ export const Socials = [
 ];
 
 export const Game_skill = [
-     {
+    {
         skill_name: "Unity",
         Image: "/Unity-Dark.svg",
         width: 60,
@@ -111,12 +133,6 @@ export const Game_skill = [
         height: 60,
     },
     {
-        skill_name: "SQllite",
-        Image: "/SQLite.svg",
-        width: 50,
-        height: 50,
-    },
-    {
         skill_name: "CS",
         Image: "/CS.svg",
         width: 50,
@@ -127,6 +143,30 @@ export const Game_skill = [
         Image: "/CPP.svg",
         width: 50,
         height: 50,
+    },
+    {
+        skill_name: "Arduino",
+        Image: "/Arduino.svg",
+        width: 50,
+        height: 50,
+    },
+    {
+        skill_name: "Rasberry",
+        Image: "/RaspberryPi-Dark.svg",
+        width: 55,
+        height: 55,
+    },
+        {
+        skill_name: "Platfermio",
+        Image: "/PlatformIO_logo.png",
+        width: 55,
+        height: 55,
+    },
+    {
+        skill_name: "ESP32",
+        Image: "/espressif-systems.svg",
+        width: 55,
+        height: 55,
     },
 
 
@@ -152,6 +192,13 @@ export const Frontend_skill = [
         width: 60,
         height: 60,
     },
+            {
+        skill_name: "UI",
+        Image: "/MaterialUI-Dark.svg",
+        width: 50,
+        height: 50,
+    },
+    
         {
         skill_name: "Css",
         Image: "/css.png",
@@ -164,25 +211,48 @@ export const Frontend_skill = [
         width: 50,
         height: 50,
     },
-
     {
         skill_name: "Java Script",
         Image: "/js.png",
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
     },
     {
         skill_name: "Type Script",
         Image: "/ts.png",
-        width: 50,
-        height: 50,
+        width: 40,
+        height: 40,
     },
 ];
 
 export const DevTools = [
+        {
+        skill_name: "VS Code",
+        Image: "/vs.svg",
+        width: 50,
+        height: 50,
+    },
+        {
+        skill_name: "Code",
+        Image: "/VisualStudio-Dark.svg",
+        width: 50,
+        height: 50,
+    },
     {
         skill_name: "GitHub",
         Image: "/gitwhite.png",
+        width: 50,
+        height: 50,
+    },
+        {
+        skill_name: "Gitlab",
+        Image: "/GitLab-Dark.svg",
+        width: 50,
+        height: 50,
+    },
+            {
+        skill_name: "Git",
+        Image: "/Git.svg",
         width: 50,
         height: 50,
     },
@@ -195,51 +265,60 @@ export const DevTools = [
     {
         skill_name: "Figma",
         Image: "/figma.png",
-        width: 40,
-        height: 40,
+        width: 30,
+        height: 30,
     },
-    {
-        skill_name: "Railway",
-        Image: "/railway.svg",
-        width: 50,
-        height: 50,
-    },
-    {
-        skill_name: "VS Code",
-        Image: "/vs.svg",
-        width: 50,
-        height: 50,
-    },
+
+
     {
         skill_name: "ChatGPT",
         Image: "/chatgpt.svg",
         width: 50,
         height: 50,
     },
+
 ];
 
 export const Mobile = [
     {
         skill_name: "Flutter",
         Image: "/Flutter-Dark.svg",
-        width: 50,
-        height: 50,
+        width: 55,
+        height: 55,
+    },
+        {
+        skill_name: "Dart",
+        Image: "/Dart-Dark.svg",
+        width: 55,
+        height: 55,
+    },
+        {
+        skill_name: "Python",
+        Image: "/Python-Dark.svg",
+        width: 55,
+        height: 55,
     },
     {
         skill_name: "Firebase",
         Image: "/Firebase.png",
-        width: 35,
-        height: 35,
+        width: 40,
+        height: 40,
     },
     {
-        skill_name: "Dart",
-        Image: "/Dart-Dark.svg",
-        width: 60,
-        height: 60,
+        skill_name: "Graph",
+        Image: "/GraphQL-Dark.svg",
+        width: 55,
+        height: 55,
     },
     {
-        skill_name: "Postger",
-        Image: "/Postger.png",
+        skill_name: "Docker",
+        Image: "/Docker.svg",
+        width: 55,
+        height: 55,
+    },
+            {
+        skill_name: "SQlite",
+        Image: "/SQLite.svg",
         width: 50,
         height: 50,
     },

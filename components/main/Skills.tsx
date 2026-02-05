@@ -145,7 +145,7 @@ const Skills = () => {
             </div>
 
             <div className="hidden md:block w-full h-full absolute top-24">
-                <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
+                <div className="w-full h-full z-[-10] opacity-60 absolute flex items-center justify-center bg-cover">
                     <video
                         className="w-full h-auto"
                         preload="false"
