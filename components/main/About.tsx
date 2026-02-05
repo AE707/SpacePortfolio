@@ -40,7 +40,7 @@ const About = () => {
                             variants={slideInFromLeft(0.5)}
                             className="flex flex-col items-center w-auto h-auto rounded-full overflow-hidden border-[6px] border-[#7042f88b] bg-gradient-to-r from-purple-500 to-cyan-500"
                         >
-                            <img src="/AE.jpeg" alt="profile" mt-6 md:mt-width={280} className="md:w-[350px]"15 top-[120px] md:top-[170px] />
+                            <img src="/AE.jpeg" alt="profile" className="w-[280px] md:w-[350px]" />
                         </motion.div>
                     )}
                 </InView>
