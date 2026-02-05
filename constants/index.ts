@@ -1,24 +1,3 @@
-export const HeroSkills = [
-    { name: "Platfermio",
-         icon: "/PlatformIO_logo.png" },
-  { name: "JavaScript",
-     icon: "/js.png" },
-  { name: "TypeScript",
-     icon: "/ts.png" },
-  { name: "Python", 
-    icon: "/Python-Dark.svg" },
-  { name: "VS Code",
-     icon: "/vscode.png" },
-  { name: "GitHub",
-     icon: "/github.png" },
-  { name: "Django",
-     icon: "/django.png" },
-  { name: "Unity",
-     icon: "/unity.png" },
-  { name: "C#",
-     icon: "/csharp.png" },
-  // Add more as needed
-];
 
 export const Skill_data = [
     {

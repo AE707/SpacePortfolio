@@ -1,7 +1,7 @@
 "use client";
+import Image from "next/image";
 
 
-import { HeroSkills } from "@/constants";
 import {
     slideInFromLeft,
     slideInFromRight,
@@ -149,69 +149,12 @@ const HeroContent = () => {
                                 variants={slideInFromRight(0.8)}
                                 className="w-full md:w-3/6 h-full flex justify-center items-center z-40"
                             >
-<motion.div
-  ref={ref}
-  initial="hidden"
-  animate={inView ? "visible" : "hidden"}
-  variants={slideInFromRight(0.8)}
-  className="w-full md:w-3/6 h-full flex justify-center items-center z-40"
->
-  {/* Background grid lines (decorative) */}
-  <div className="absolute inset-0 opacity-20">
-    <svg width="100%" height="100%" className="absolute">
-      {/* Horizontal lines */}
-      {[0, 1, 2, 3].map((i) => (
-        <line
-          key={`h-${i}`}
-          x1="0"
-          y1={`${i * 25}%`}
-          x2="100%"
-          y2={`${i * 25}%`}
-          stroke="rgba(120, 119, 198, 0.3)"
-          strokeWidth="1"
-        />
-      ))}
-      {/* Vertical lines */}
-      {[0, 1, 2, 3].map((i) => (
-        <line
-          key={`v-${i}`}
-          x1={`${i * 33.33}%`}
-          y1="0"
-          x2={`${i * 33.33}%`}
-          y2="100%"
-          stroke="rgba(120, 119, 198, 0.3)"
-          strokeWidth="1"
-        />
-      ))}
-    </svg>
-  </div>
-
-  {/* Icon grid - matches original 3x3 layout */}
-  <div className="grid grid-cols-3 gap-8 p-10 relative z-10">
-    {HeroSkills.map((skill, index) => (
-      <motion.div
-        key={skill.name}
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ 
-          delay: 0.8 + index * 0.1,
-          type: "spring",
-          stiffness: 100 
-        }}
-        className="flex items-center justify-center bg-[#10132E] bg-opacity-50 backdrop-blur-sm rounded-lg p-4 border border-[#7042f88b] hover:border-[#7042f8] transition-all"
-      >
-<img
-  src={skill.icon}
-  alt={skill.name}
-  width={65}
-  height={65}
-  className="object-contain"
-/>
-
-      </motion.div>
-    ))}
-  </div>
-</motion.div>
+                                <Image
+                                    src="/mainIconsdark.svg"
+                                    alt="work icons"
+                                    height={650}
+                                    width={650}
+                                />
                             </motion.div>
                         )}
                     </InView>
