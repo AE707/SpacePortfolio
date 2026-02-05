@@ -11,9 +11,9 @@ const Projects = () => {
             </h1>
             <div className="h-full w-full flex flex-col md:flex-row text-[32px] mgap-6 md:gap-10 px-4 md:px-10py-6 md:py-10d:text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 py-12 md:py-20">
                 <ProjectCard
-                    src="/NextWebsite.png"
-                    title="Modern Next.js Portfolio"
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                    src="https://raw.githubusercontent.com/AE707/FlarpyBloarb/main/Assets/Screenshots/GamePlay.gif"
+              title="FlarpyBloarb - Flappy Bird Clone"
+                    description="description="Unity 2D casual game inspired by Flappy Bird. Built with C# focusing on gameplay mechanics, physics-based movement, and clean code structure."
                 />
                 <ProjectCard
                     src="/CardImage.png"
