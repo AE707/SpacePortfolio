@@ -18,7 +18,7 @@ const About = () => {
                             initial="hidden"
                             animate={inView ? "visible" : "hidden"}
                             variants={slideInFromTop}
-                            className="text-[40px] pt-[5rem] pb-3 md:p-0 font-medium text-center text-gray-200 z-50"
+                            className="text-[32px] md:text-[40px] pt-[3rem] md:pt-[5rem] pb-3 md:pb-0 font-medium text-center text-gray-200 z-50"
                         >
                             About
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
@@ -30,7 +30,7 @@ const About = () => {
                 </InView>
             </div>
 
-            <div className="flex flex-col items-center justify-start relative  lg:mt-15 md:top-[170px] z-[20] w-auto h-auto">
+            <div className="flex flex-col items-center justify-start relative  mt-6 md:mt-15 top-[120px] md:top-[170px] z-[20] w-auto h-auto">
                 <InView triggerOnce={false}>
                     {({ inView, ref }) => (
                         <motion.div
@@ -40,7 +40,7 @@ const About = () => {
                             variants={slideInFromLeft(0.5)}
                             className="flex flex-col items-center w-auto h-auto rounded-full overflow-hidden border-[6px] border-[#7042f88b] bg-gradient-to-r from-purple-500 to-cyan-500"
                         >
-                            <img src="/AE.jpeg" alt="profile" width={350} />
+                            <img src="/AE.jpeg" alt="profile" mt-6 md:mt-width={280} className="md:w-[350px]"15 top-[120px] md:top-[170px] />
                         </motion.div>
                     )}
                 </InView>
@@ -81,7 +81,7 @@ const About = () => {
                     )}
                 </InView>
             </div>
-            <div className="absolute z-[20] bottom-[-4rem] md:bottom-[20px] md:top-[850px]  px-[5px]">
+            <div className="absolute z-[20] mt-6 md:mt-bottom-[-2rem] md:bottom-[20px] md:top-[850px]width={280} className="md:w-[350px]"15 top-[120px] md:top-[170px]  px-[5px]">
                 <div className="cursive text-[20px] font-medium text-center text-gray-300">
                     Shaping Tomorrow with Code and Creativity
                 </div>
