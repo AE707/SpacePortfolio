@@ -19,9 +19,9 @@ const HeroContent = () => {
                     ref={ref}
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
-                    className="flex md:flex-row flex-col-reverse items-center justify-center gap-10 md:gap-0 md:px-20 px-5 mt-20 w-full z-20"
+                    className="flex md:flex-row flex-col-reverse items-center justify-center gap-5 md:gap-10 px-4 md:px-20 mt-10 md:mt-20 w-full z-20"
                 >
-                    <div className="h-full w-full md:w-3/6 flex flex-col gap-5 justify-center text-start">
+                    <div className="h-full w-full md:w-3/6 flex flex-col gap-3 md:gap-5 justify-center text-center md:text-start">
                         <div className="hidden md:flex flex-row items-center md:gap-5 gap-1">
                             <InView triggerOnce={false}>
                                 {({ inView, ref }) => (
@@ -81,7 +81,7 @@ const HeroContent = () => {
                                     initial="hidden"
                                     animate={inView ? "visible" : "hidden"}
                                     variants={slideInFromLeft(0.5)}
-                                    className="flex flex-col gap-6 mt-6 md:text-5xl text-4xl font-bold text-white max-w-[600px] w-auto h-auto z-20"
+                                    className="flex flex-col gap-4 md:gap-6 mt-4 md:mt-6 text-3xl md:text-5xl font-bold text-white max-w-full md:max-w-[600px] w-auto h-auto z-20"
                                 >
                                     <span>
                                         Coding
@@ -107,7 +107,7 @@ const HeroContent = () => {
                                     initial="hidden"
                                     animate={inView ? "visible" : "hidden"}
                                     variants={slideInFromLeft(0.8)}
-                                    className="text-sm md:text-md text-gray-400 my-5 max-w-[650px] z-30"
+                                    className="text-xs md:text-sm lg:text-md text-gray-400 my-3 md:my-5 max-w-full md:max-w-[650px] px-2 z-30"
                                 >
                                     <li>
                                         Finalist in national engineering and coding challenges.
