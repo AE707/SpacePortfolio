@@ -12,12 +12,14 @@ const Projects = () => {
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-10">
         <ProjectCard
           src="https://raw.githubusercontent.com/AE707/FlarpyBloarb/main/Assets/Screenshots/GamePlay.gif"
+                  staticImage="/flarpy.png"
           title="FlarpyBloarb"
           description="Unity 2D casual game inspired by Flappy Bird with physics-based movement and clean code."
           link="https://github.com/AE707/FlarpyBloarb"
         />
         <ProjectCard
           src="https://media.githubusercontent.com/media/AE707/ShiftRunner3D/main/Assets/screenshots/ShifGamePlay.gif"
+                  staticImage="/shift.png"
           title="ShiftRunner3D"
           description="Fast-paced 3D endless runner built in Unity with dynamic obstacles and smooth controls."
           link="https://github.com/AE707/ShiftRunner3D"
