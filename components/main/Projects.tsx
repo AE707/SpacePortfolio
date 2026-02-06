@@ -41,7 +41,7 @@ const Projects = () => {
           link="https://github.com/AE707/FitTrack-hard"
         />
         <ProjectCard
-          src="/CardImage.png"
+          src="/CardImage.jpeg"
           title="SubM"
           description="Subscription management system with automated billing, analytics, and customer portal."
           link="https://github.com/AE707/SubM"
