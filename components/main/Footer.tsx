@@ -1,9 +1,9 @@
 import {
-    RxDiscordLogo,
-    RxGithubLogo
+    RxGithubLogo,
+    RxLinkedinLogo,
+    RxTwitterLogo
 } from "react-icons/rx";
 
-import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
     return (
@@ -12,41 +12,25 @@ const Footer = () => {
                 <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
                     <div className="p-[10px] md:min-w-[150px] md:min-w-[200px]p-[15px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">Community</div>
-                        <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
-                            <FaYoutube />
-                            <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
-                                Youtube
-                            </span>
-                        </p>
+
                         <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
                             <RxGithubLogo />
-                            <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">Github</span>
+                            <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[5px] ml-[6px]">Github</span>
                         </p>
-                        <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
-                            <RxDiscordLogo />
-                            <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
-                                Discord
-                            </span>
-                        </p>
+
                     </div>
                     <div className="p-[10px] md:min-w-[150px] md:min-w-[200px]p-[15px] h-auto flex flex-col items-center justify-start">
                         <div className="font-bold text-[16px]">
                             Social Media
                         </div>
                         <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
-                            <FaYoutube />
-                            <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
-                                Instagram
-                            </span>
-                        </p>
-                        <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
-                            <RxGithubLogo />
+                            <RxTwitterLogo />
                             <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
                                 Twitter
                             </span>
                         </p>
                         <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
-                            <RxDiscordLogo />
+                            <RxLinkedinLogo />
                             <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
                                 Linkedin
                             </span>
@@ -61,19 +45,19 @@ const Footer = () => {
                         </p>
                         <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
                             <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
-                                Learning about me
+                                Hire Me
                             </span>
                         </p>
                         <p className="flex flex-row items-center p-[10px] md:my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] cursor-pointer">
                             <span className="p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] ml-[6px]">
-                                AE7\07@outlook.com
+                                AE7_07@outlook.com
                             </span>
                         </p>
                     </div>
                 </div>
 
                 <div className="mb-[20px] p-[10px] md:text-[13px] md:text-[15px]my-[10px] md:my-[15px]min-w-[150px] md:min-w-[200px]p-[15px] text-center">
-                    &copy; WebChain Dev 2023 Inc. All rights reserved
+                    &copy; AE7 Dev 2026 Inc. All rights reserved
                 </div>
             </div>
         </div>
