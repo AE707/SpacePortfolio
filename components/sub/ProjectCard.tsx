@@ -34,6 +34,18 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
     }
   }, [isHovered]);
 
+    // Control video playback on hover
+    React.useEffect(() => {
+          if (isGif && videoRef.current) {
+                  if (isHovered) {
+                            videoRef.current.play();
+                          } else {
+                            videoRef.current.pause();
+                            videoRef.current.currentTime = 0;
+                          }
+                }
+        }, [isHovered, isGif]);
+
   return (
     <a
       href={link}
@@ -58,7 +70,6 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
             <video
               ref={videoRef}
               src={src}
-              autoPlay
               loop
               muted
               playsInline
