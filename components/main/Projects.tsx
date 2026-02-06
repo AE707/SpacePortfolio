@@ -25,7 +25,7 @@ const Projects = () => {
           link="https://github.com/AE707/ShiftRunner3D"
         />
         <ProjectCard
-          src="/CardImage.png"
+          src="/tradingagent.webp"
           title="Trading Agent"
           description="Automated ML trading bot with backtester, rule engine, and continuous learning system."
           link="https://github.com/AE707/trading-agent"
@@ -37,7 +37,8 @@ const Projects = () => {
           link="https://github.com/AE707/SpacePortfolio"
         />
         <ProjectCard
-          src="/NextWebsite.png"
+          src="/FIT_TRACK.png"
+          
           title="FitTrack"
           description="Comprehensive fitness tracking app with workout plans, progress monitoring, and analytics."
           link="https://github.com/AE707/FitTrack-hard"
