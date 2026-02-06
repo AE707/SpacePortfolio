@@ -17,7 +17,7 @@ const Projects = () => {
           link="https://github.com/AE707/FlarpyBloarb"
         />
         <ProjectCard
-          src="/NextWebsite.png"
+          src="https://raw.githubusercontent.com/AE707/ShiftRunner3D/main/Assets/screenshots/ShifGamePlay.gif"
           title="ShiftRunner3D"
           description="Fast-paced 3D endless runner built in Unity with dynamic obstacles and smooth controls."
           link="https://github.com/AE707/ShiftRunner3D"
