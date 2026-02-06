@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 
 interface Props {
@@ -16,7 +15,7 @@ const ProjectCard = ({ src, title, description, link }: Props) => {
       rel="noopener noreferrer"
       className="relative overflow-hidden rounded-lg shadow-lg border border-[#2A0E61] cursor-pointer hover:scale-105 transition-transform duration-300"
     >
-      <Image
+      <img
         src={src}
         alt={title}
         width={1000}
