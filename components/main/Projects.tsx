@@ -62,8 +62,7 @@ const Projects = () => {
           src={[
             "/access.webp",
             "/access1.jpeg",
-            "/access2.jpeg",
-            "/access3.jpeg"
+            "/access2.jpeg"
             ]}
           title="AccessDoorController"
           description="AccessControlDoor is an ESP32-based access control firmware built with PlatformIO, designed for secure and modular embedded door systems. The project showcases key embedded concepts including GPIO control, authentication logic, state management, and hardware–software integration."
