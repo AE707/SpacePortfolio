@@ -10,7 +10,7 @@ const About = () => {
             id="about"
             className="flex flex-col md:flex-row relative items-center justify-center min-h-screen w-full h-full"
         >
-            <div className="md:absolute w-auto h-auto md:top-[100px] z-[5]">
+            <div className="md:absolute w-auto h-auto md:top-[80px] z-[5]">
                 <InView triggerOnce={false}>
                     {({ inView, ref }) => (
                         <motion.div
@@ -18,7 +18,7 @@ const About = () => {
                             initial="hidden"
                             animate={inView ? "visible" : "hidden"}
                             variants={slideInFromTop}
-                            className="text-[32px] md:text-[40px] pt-[3rem] md:pt-[5rem] pb-3 md:pb-0 font-medium text-center text-gray-200 z-50"
+                            className="text-[32px] md:text-[40px] pt-[3rem] md:pt-[5rem] pb-3 md:pb-20 font-medium text-center text-gray-200 z-50"
                         >
                             About
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
