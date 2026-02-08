@@ -22,14 +22,14 @@ export const Experiences = [
     },
     {
         name: "TechInventors — Software Engineer",
-        icon: "/teck.jfif",
+        icon: "/teck.jpg",
                 type: "Hybrid",
         period: "4 mos",
         description: "Developed a mobile and web-based system for stadium reservation and scheduling. Implemented application logic and user interfaces using Flutter for mobile and JavaScript-based web technologies. Collaborated within an agile team environment using Scrum methodology"
     },
         {
         name: "SastecSkills - IoT Developer",
-        icon: "/sas.jfif",
+        icon: "/sas.jpg",
                 type: "Part-time",
         period: "4 mos",
         description: "Designed embedded systems using ESP32 and Arduino. Built smart home automation.",
