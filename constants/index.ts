@@ -1,3 +1,43 @@
+export const Experiences = [
+    {
+        name: "Teleperformance — QualitySpecialist",
+        icon: "/tp.webp",
+                type: "Full-time",
+        period: "1 yr 7 mos",
+        description: "Managed quality assurance workflows in a high-volume, fast-paced operational environment.  Performed root cause analysis on performance and quality issues, contributing to process improvements."
+    },
+    {
+        name: "MayorsBike/Slimmezon — WebDesigner&Developer",
+        icon: "/bike.webp",
+                type: "Remote",
+        period: "9 mos",
+        description: "Designed and developed responsive web interfaces for e-commerce platforms.Implemented structured layouts and user flows with a focus on usability and conversion. Integrated payment solutions and interactive components using HTML, CSS, and JavaScript. Applied UX/UI principles using Figma to translate design concepts into production-ready interfaces."
+    },
+    {
+        name: "TerraForm — Systems Engineer Intern",
+        icon: "/terra.jpg",
+                type: "Full-time",
+        period: "8 mos",
+        description: "Contributed to the development of a smartwatch-based security system using ESP32 sensors. Implemented embedded logic for sensor data collection and event-based threat reporting. Developed a companion mobile application using Flutter and Dart for device interaction. Used PlatformIO and C++ for embedded development and followed Scrum-based project workflows"
+    },
+    {
+        name: "TechInventors — Software Engineer",
+        icon: "/teck.jfif",
+                type: "Hybrid",
+        period: "4 mos",
+        description: "Developed a mobile and web-based system for stadium reservation and scheduling. Implemented application logic and user interfaces using Flutter for mobile and JavaScript-based web technologies. Collaborated within an agile team environment using Scrum methodology"
+    },
+        {
+        name: "SastecSkills - IoT Developer",
+        icon: "/sas.jfif",
+                type: "Part-time",
+        period: "4 mos",
+        description: "Designed embedded systems using ESP32 and Arduino. Built smart home automation.",
+    },
+    
+];
+
+
 
 export const Skill_data = [
     {
