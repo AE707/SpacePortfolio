@@ -11,8 +11,7 @@ const Experience = () => {
     return (
         <section
             id="experience"
-            className="flex flex-col items-center justify-center gap-6 md:gap-3 px-4 h-fit relative overflow-hidden py-40"
-            style={{ transform: "scale(0.9)" }}
+            className="flex flex-col items-center justify-center gap-4 md:gap-6 px-4 sm:px-6 h-fit relative overflow-hidden py-16 sm:py-24 md:py-40"
         >
             <ExperienceText />
 
@@ -35,7 +34,7 @@ const Experience = () => {
                                             alt={exp.name}
                                             width={80}
                                             height={80}
-                                            className="rounded-lg object-contain"
+                                            className="rounded-lg object-contain w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20"
                                         />
                                     </div>
 

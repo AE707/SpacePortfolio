@@ -16,8 +16,7 @@ const Skills = () => {
     return (
         <section
             id="skills"
-            className="flex flex-col items-center justify-center gap-6 md:gap-3 px-4 h-fit relative overflow-hidden py-40"
-            style={{ transform: "scale(0.9" }}
+            className="flex flex-col items-center justify-center gap-4 md:gap-6 px-4 sm:px-6 h-fit relative overflow-hidden py-16 sm:py-24 md:py-40"
         >
             <SkillText />
 
@@ -33,7 +32,7 @@ const Skills = () => {
                                     variants={slideInFromLeft(0.5)}
                                     className="rounded-md text-[white] w-full my-auto py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
                                 >
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl font-bold">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl md:text-2xl font-bold">
                                         Game & Embedded Systems Development{" "}
                                     </span>
                                     <br />
@@ -62,7 +61,7 @@ const Skills = () => {
                                     variants={slideInFromRight(0.5)}
                                     className="rounded-md text-[white] w-full h-full py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
                                 >
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl font-bold">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl md:text-2xl font-bold">
                                         Frontend & Web Development{" "}
                                     </span>
                                     <br />
@@ -93,7 +92,7 @@ const Skills = () => {
                                     variants={slideInFromLeft(0.5)}
                                     className="rounded-md text-[white] w-full my-auto py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
                                 >
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl font-bold">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl md:text-2xl font-bold">
                                         Dev Tools{" "}
                                     </span>
                                     <br />
@@ -122,7 +121,7 @@ const Skills = () => {
                                     variants={slideInFromRight(0.5)}
                                     className="rounded-md text-[white] w-full h-full py-[8px] px-[10px] border border-[#7042f88b] opacity-[0.9]"
                                 >
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl font-bold">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl md:text-2xl font-bold">
                                         Mobile & Backend{" "}
                                     </span>
                                     <br />

@@ -26,7 +26,8 @@ const HeroContent = () => {
                     className="flex md:flex-row flex-col-reverse items-center justify-center gap-5 md:gap-10 px-4 md:px-20 mt-10 md:mt-20 w-full z-20"
                 >
                     <div className="h-full w-full md:w-3/6 flex flex-col gap-3 md:gap-5 justify-center text-center md:text-start">
-                        <div className="hidden md:flex flex-row items-center md:gap-5 gap-1">
+                        {/* On mobile: heading first (order-1), then badges (order-2). On md: badges first (order-1), heading second (order-2) */}
+                        <div className="flex flex-row flex-wrap items-center justify-center md:justify-start gap-2 md:gap-5 order-2 md:order-1">
                             <InView triggerOnce={false}>
                                 {({ inView, ref }) => (
                                     <motion.div
@@ -85,7 +86,7 @@ const HeroContent = () => {
                                     initial="hidden"
                                     animate={inView ? "visible" : "hidden"}
                                     variants={slideInFromLeft(0.5)}
-                                    className="flex flex-col gap-4 md:gap-6 mt-4 md:mt-6 text-3xl md:text-5xl font-bold text-white max-w-full md:max-w-[600px] w-auto h-auto z-20"
+                                    className="flex flex-col gap-4 md:gap-6 mt-20 md:mt-6 text-3xl md:text-5xl font-bold text-white max-w-full md:max-w-[600px] w-auto h-auto z-20 order-1 md:order-2"
                                 >
                                     <span>
                                         Coding
@@ -111,24 +112,18 @@ const HeroContent = () => {
                                     initial="hidden"
                                     animate={inView ? "visible" : "hidden"}
                                     variants={slideInFromLeft(0.8)}
-                                    className="text-xs md:text-sm lg:text-md text-gray-400 my-3 md:my-5 max-w-full md:max-w-[650px] px-2 z-30"
+                                    className="text-xs md:text-sm lg:text-base text-gray-400 my-3 md:my-5 max-w-full md:max-w-[650px] px-2 z-30 list-disc list-inside order-3"
                                 >
-                                    <li>
-                                        Finalist in national engineering and coding challenges.
-                                    </li>
-                                    <li>
-                                        Built smart prosthetics and robotics projects integrating mechanics, electronics, and software.
-                                    </li>
-                                    <li>
-                                        Completed multiple open‑source and hackathon projects in embedded and IoT systems.
-                                    </li>
-                                    <li>
-                                        Mentored peers on CAD, simulation, and engineering project workflows.
-                                    </li>
+                                    <ul className="space-y-1">
+                                        <li>Finalist in national engineering and coding challenges.</li>
+                                        <li>Built smart prosthetics and robotics projects integrating mechanics, electronics, and software.</li>
+                                        <li>Completed multiple open‑source and hackathon projects in embedded and IoT systems.</li>
+                                        <li>Mentored peers on CAD, simulation, and engineering project workflows.</li>
+                                    </ul>
                                 </motion.div>
                             )}
                         </InView>
-                        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+                        <div className="flex flex-col sm:flex-row gap-4 mt-4 items-center sm:items-start order-4">
                         <InView triggerOnce={false}>
                             {({ inView, ref }) => (
                                 <motion.a
@@ -222,13 +217,14 @@ onClick={() => setIsResumeOpen(true)}
                                 initial="hidden"
                                 animate={inView ? "visible" : "hidden"}
                                 variants={slideInFromRight(0.8)}
-                                className="w-full md:w-3/6 h-full flex justify-center items-center z-40"
+                                className="w-full md:w-3/6 h-full hidden md:flex justify-center items-center z-40"
                             >
                                 <Image
                                     src="/mainIconsdark.svg"
                                     alt="work icons"
-                                    height={650}
                                     width={650}
+                                    height={650}
+                                    className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[450px] lg:max-w-[550px] h-auto object-contain"
                                 />
                             </motion.div>
                         )}

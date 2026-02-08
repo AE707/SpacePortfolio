@@ -70,7 +70,7 @@ const ProjectCard = ({
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Top image / GIF / carousel */}
-      <div className="w-full h-56 overflow-hidden">
+      <div className="w-full h-48 sm:h-56 overflow-hidden">
         <img
           src={getImageToShow()}
           alt={title}

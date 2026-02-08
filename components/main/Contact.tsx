@@ -166,8 +166,7 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="flex flex-col items-center justify-center gap-6 md:gap-3 px-4 h-fit relative overflow-hidden py-40"
-            style={{ transform: "scale(0.9)" }}
+            className="flex flex-col items-center justify-center gap-4 md:gap-6 px-4 sm:px-6 h-fit relative overflow-hidden py-16 sm:py-24 md:py-40"
         >
             <ContactText />
 
@@ -182,7 +181,7 @@ const Contact = () => {
                             variants={slideInFromLeft(0.5)}
                             className="w-full lg:w-1/2 rounded-md text-white py-6 px-8 border border-[#7042f88b] opacity-90 bg-[#10132E] bg-opacity-50 backdrop-blur-sm"
                         >
-                            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl font-bold mb-6">
+                            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl md:text-2xl font-bold mb-6">
                                 Contact Information
                             </h3>
 
@@ -232,6 +231,8 @@ const Contact = () => {
                                         href="https://github.com/AE707"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        title="GitHub"
+                                        aria-label="GitHub"
                                         className="p-3 rounded-lg bg-[#7042f8] bg-opacity-20 border border-[#7042f8] border-opacity-30 hover:bg-opacity-40 transition-all"
                                     >
                                         <RxGithubLogo className="text-2xl" />
@@ -240,6 +241,8 @@ const Contact = () => {
                                         href="https://www.linkedin.com/in/alaaelghoul"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        title="LinkedIn"
+                                        aria-label="LinkedIn"
                                         className="p-3 rounded-lg bg-[#7042f8] bg-opacity-20 border border-[#7042f8] border-opacity-30 hover:bg-opacity-40 transition-all"
                                     >
                                         <RxLinkedinLogo className="text-2xl" />
@@ -248,6 +251,8 @@ const Contact = () => {
                                         href="https://x.com/ae7_alaa"
                                         target="_blank"
                                         rel="noopener noreferrer"
+                                        title="Twitter / X"
+                                        aria-label="Twitter / X"
                                         className="p-3 rounded-lg bg-[#7042f8] bg-opacity-20 border border-[#7042f8] border-opacity-30 hover:bg-opacity-40 transition-all"
                                     >
                                         <RxTwitterLogo className="text-2xl" />
@@ -268,7 +273,7 @@ const Contact = () => {
                             variants={slideInFromRight(0.5)}
                             className="w-full lg:w-1/2 rounded-md text-white py-6 px-8 border border-[#7042f88b] opacity-90 bg-[#10132E] bg-opacity-50 backdrop-blur-sm"
                         >
-                            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-2xl font-bold mb-6">
+                            <h3 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500 text-xl md:text-2xl font-bold mb-6">
                                 Send a Message
                             </h3>
 
