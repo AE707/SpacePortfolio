@@ -19,6 +19,14 @@ const Contact = () => {
         subject: "",
         message: ""
     });
+
+        const [errors, setErrors] = useState({
+  name: "",
+  email: "",
+  subject: "",
+  message: "",
+});
+
     const [emailButtonState, setEmailButtonState] = useState<ButtonState>("idle");
     const [whatsappButtonState, setWhatsappButtonState] = useState<ButtonState>("idle");
 
@@ -34,11 +42,63 @@ const Contact = () => {
             ...prev,
             [name]: value
         }));
+          setErrors(prev => ({
+    ...prev,
+    [name]: "", // clear error as user types
+  }));
     };
+
+
+    const validateForm = () => {
+  const newErrors = {
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  };
+
+  if (!formData.name.trim()) {
+    newErrors.name = "Name is required.";
+  }
+
+  if (!formData.email.trim()) {
+    newErrors.email = "Email is required.";
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    newErrors.email = "Enter a valid email address.";
+  }
+
+  if (!formData.subject.trim()) {
+    newErrors.subject = "Subject is required.";
+  }
+
+  if (!formData.message.trim()) {
+    newErrors.message = "Message is required.";
+  }
+
+  setErrors(newErrors);
+
+  // if any error string is non‑empty -> invalid
+  return Object.values(newErrors).every(msg => msg === "");
+};
+
+
+    const isFormValid = () => {
+    return (
+    formData.name.trim() !== "" &&
+    formData.email.trim() !== "" &&
+    formData.subject.trim() !== "" &&
+    formData.message.trim() !== ""
+    );
+};
 
     // Handle Email submission
     const handleEmailSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
+  if (!validateForm()) {
+    setEmailButtonState("error");
+    setTimeout(() => setEmailButtonState("idle"), 2000);
+    return;
+  }
         setEmailButtonState("loading");
 
         try {
@@ -75,6 +135,11 @@ const Contact = () => {
     // Handle WhatsApp submission
     const handleWhatsAppSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+  if (!validateForm()) {
+    setWhatsappButtonState("error");
+    setTimeout(() => setWhatsappButtonState("idle"), 2000);
+    return;
+  }
         setWhatsappButtonState("loading");
 
         setTimeout(() => {
@@ -225,56 +290,72 @@ const Contact = () => {
                                     />
                                 </div>
 
-                                <div>
-                                    <label htmlFor="email" className="text-gray-400 text-sm mb-2 block">
-                                        Your Email
-                                    </label>
-                                    <input
-                                        type="email"
-                                        id="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleChange}
-                                        placeholder="john@example.com"
-                                        className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-[#7042f88b] focus:border-[#7042f8] outline-none text-white placeholder-gray-500 transition-colors"
-                                        required
-                                        disabled={emailButtonState === "loading" || whatsappButtonState === "loading"}
-                                    />
-                                </div>
+<div>
+  <label htmlFor="email" className="text-gray-400 text-sm mb-2 block">
+    Your Email
+  </label>
+  <input
+    type="email"
+    id="email"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    placeholder="john@example.com"
+    className={`w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border ${
+      errors.email ? "border-red-500" : "border-[#7042f88b]"
+    } focus:border-[#7042f8] outline-none text-white placeholder-gray-500 transition-colors`}
+    required
+    disabled={emailButtonState === "loading" || whatsappButtonState === "loading"}
+  />
+  {errors.email && (
+    <p className="mt-1 text-xs text-red-400">{errors.email}</p>
+  )}
+</div>
 
-                                <div>
-                                    <label htmlFor="subject" className="text-gray-400 text-sm mb-2 block">
-                                        Subject
-                                    </label>
-                                    <input
-                                        type="text"
-                                        id="subject"
-                                        name="subject"
-                                        value={formData.subject}
-                                        onChange={handleChange}
-                                        placeholder="Project Collaboration"
-                                        className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-[#7042f88b] focus:border-[#7042f8] outline-none text-white placeholder-gray-500 transition-colors"
-                                        required
-                                        disabled={emailButtonState === "loading" || whatsappButtonState === "loading"}
-                                    />
-                                </div>
+<div>
+  <label htmlFor="subject" className="text-gray-400 text-sm mb-2 block">
+    Subject
+  </label>
+  <input
+    type="text"
+    id="subject"
+    name="subject"
+    value={formData.subject}
+    onChange={handleChange}
+    placeholder="Project Collaboration"
+    className={`w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border ${
+      errors.subject ? "border-red-500" : "border-[#7042f88b]"
+    } focus:border-[#7042f8] outline-none text-white placeholder-gray-500 transition-colors`}
+    required
+    disabled={emailButtonState === "loading" || whatsappButtonState === "loading"}
+  />
+  {errors.subject && (
+    <p className="mt-1 text-xs text-red-400">{errors.subject}</p>
+  )}
+</div>
 
-                                <div>
-                                    <label htmlFor="message" className="text-gray-400 text-sm mb-2 block">
-                                        Message
-                                    </label>
-                                    <textarea
-                                        id="message"
-                                        name="message"
-                                        rows={5}
-                                        value={formData.message}
-                                        onChange={handleChange}
-                                        placeholder="Your message here..."
-                                        className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-[#7042f88b] focus:border-[#7042f8] outline-none text-white placeholder-gray-500 transition-colors resize-none"
-                                        required
-                                        disabled={emailButtonState === "loading" || whatsappButtonState === "loading"}
-                                    />
-                                </div>
+<div>
+  <label htmlFor="message" className="text-gray-400 text-sm mb-2 block">
+    Message
+  </label>
+  <textarea
+    id="message"
+    name="message"
+    rows={5}
+    value={formData.message}
+    onChange={handleChange}
+    placeholder="Your message here..."
+    className={`w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border ${
+      errors.message ? "border-red-500" : "border-[#7042f88b]"
+    } focus:border-[#7042f8] outline-none text-white placeholder-gray-500 transition-colors resize-none`}
+    required
+    disabled={emailButtonState === "loading" || whatsappButtonState === "loading"}
+  />
+  {errors.message && (
+    <p className="mt-1 text-xs text-red-400">{errors.message}</p>
+  )}
+</div>
+
 
                                 {/* Stateful Buttons */}
                                 <div className="flex flex-col sm:flex-row gap-3">
@@ -297,7 +378,7 @@ const Contact = () => {
                                         idleText="Send via WhatsApp"
                                         loadingText="Opening..."
                                         successText="Opening WhatsApp!"
-                                        errorText="Failed"
+                                        errorText="Failed to Send"
                                         icon={<FaWhatsapp />}
                                         className="flex-1 bg-gradient-to-r from-green-500 to-emerald-500 hover:opacity-90"
                                     />
