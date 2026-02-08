@@ -1,6 +1,11 @@
 "use client";
 
-import StarsCanvas from "@/components/main/StarBackground";
+import dynamic from "next/dynamic";
+
+const StarsCanvas = dynamic(
+  () => import("@/components/main/StarBackground"),
+  { ssr: false }
+);
 
 export default function StarsCanvasClient() {
   return <StarsCanvas />;
