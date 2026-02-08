@@ -1,11 +1,24 @@
 "use client";
 import { cn } from "@/utils/utils";
+import type { HTMLMotionProps } from "framer-motion";
 import { motion } from "framer-motion";
-import React from "react";
-
+import React, { forwardRef } from "react";
 type ButtonState = "idle" | "loading" | "success" | "error";
+type ButtonVariant = "primary" | "whatsapp";
 
-interface StatefulButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    interface StatefulButtonProps extends Omit<HTMLMotionProps<"button">, "onAnimationStart"> {
+    state?: ButtonState;
+    variant?: ButtonVariant;
+    idleText?: string;
+    loadingText?: string;
+    successText?: string;
+    errorText?: string;
+    icon?: React.ReactNode;
+    successIcon?: React.ReactNode;
+    errorIcon?: React.ReactNode;
+    className?: string;
+}
+/*interface StatefulButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   state?: ButtonState;
   idleText?: string;
   loadingText?: string;
@@ -14,9 +27,9 @@ interface StatefulButtonProps extends React.ButtonHTMLAttributes<HTMLButtonEleme
   icon?: React.ReactNode;
   successIcon?: React.ReactNode;
   errorIcon?: React.ReactNode;
-}
+}*/
 
-export const StatefulButton = React.forwardRef<HTMLButtonElement, StatefulButtonProps>(
+export const StatefulButton = forwardRef<HTMLButtonElement, StatefulButtonProps>(
   (
     {
       state = "idle",
