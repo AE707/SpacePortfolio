@@ -138,11 +138,11 @@ Import the repo in Vercel
 ## Deploy 🎉
 
 ## 📬 Contact
-GitHub: https://github.com/AE707
+GitHub: [(Github)]https://github.com/AE707
 
-LinkedIn: [(add your LinkedIn link)](https://www.linkedin.com/in/alaaelghoul/)
+LinkedIn: [(Linkedin)](https://www.linkedin.com/in/alaaelghoul/)
 
-Email: (AE7_07@outlook.com)
+Email: [(E-mail)](AE7_07@outlook.com)
 
 ## ⭐ Support
 If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
