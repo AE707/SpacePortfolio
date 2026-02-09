@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const STAR_COUNT = 2000;
 const MAX_STAR_RADIUS = 1;
@@ -12,7 +12,7 @@ function getRandomStars(count: number) {
       x: Math.random(),
       y: Math.random(),
       r: Math.random() * MAX_STAR_RADIUS + 0.2,
-      opacity: 0.2 + Math.random() * 0.6,
+      opacity: 0.2 + Math.random() * 0.2,
     });
   }
   return stars;

@@ -8,7 +8,8 @@ const About = () => {
     return (
         <section
             id="about"
-            className="flex flex-col relative items-center justify-center min-h-screen w-full py-16 md:py-24 px-4"
+            className="flex flex-col relative items-center justify-start w-full py-20 md:py-32 px-4"
+
         >
             {/* Title - in flow */}
             <div className="w-full flex justify-center z-[5]">
@@ -42,25 +43,44 @@ const About = () => {
                             variants={slideInFromLeft(0.5)}
                             className="relative flex flex-col items-center w-auto h-auto rounded-full overflow-visible"
                         >
-                            {/* encryption.webm - follows image, visible on all viewports */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 -m-4">
-                                <video
-                                    loop
-                                    muted
-                                    autoPlay
-                                    playsInline
-                                    preload="auto"
-                                    className="h-[140%] w-auto max-w-[180%] object-contain opacity-70"
-                                    src="/encryption.webm"
-                                />
-                            </div>
-                            <div className="relative z-10 rounded-full overflow-hidden border-[6px] border-[#7042f88b] bg-gradient-to-r from-purple-500 to-cyan-500">
-                                <img
-                                    src="/AE.jpeg"
-                                    alt="profile"
-                                    className="w-[240px] sm:w-[280px] md:w-[350px]"
-                                />
-                            </div>
+{/* RESPONSIVE AVATAR + VIDEO WRAPPER */}
+<div className="relative flex items-center justify-center 
+                w-[clamp(320px,80vw,750px)] 
+                h-[clamp(320px,80vw,750px)]">
+
+    {/* VIDEO HALO */}
+    <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+        <video
+            loop
+            muted
+            autoPlay
+            playsInline
+            preload="auto"
+            className="w-full h-full object-contain scale-[1.5] opacity-70"
+            src="/encryption.webm"
+        />
+    </div>
+
+    {/* AVATAR */}
+    <div className="relative z-10 rounded-full overflow-hidden 
+                    border-[5px] sm:border-[6px] 
+                    border-[#7042f88b] 
+                    bg-gradient-to-r from-purple-500 to-cyan-500">
+        <img
+            src="/AE.jpeg"
+            alt="profile"
+            className="
+                w-[120px] 
+                sm:w-[160px] 
+                md:w-[210px] 
+                lg:w-[250px]
+            "
+        />
+    </div>
+
+</div>
+
+
                         </motion.div>
                     )}
                 </InView>
@@ -92,8 +112,8 @@ const About = () => {
                         >
                             <h1 className="Welcome-text text-sm sm:text-base w-full text-justify">
                                 I'm a Computer Engineering Master's graduate focused on gameplay programming, software engineering, and system design.
-                                I build Unity games and interactive systems with deterministic, state‑driven logic and clean, scalable architecture.
-                                I also have experience with embedded and autonomous systems involving hardware–software integration and real-time data.
+                                I build Unity games and interactive systems with deterministic, state-driven logic and clean, scalable architecture.
+                                I also have experience with embedded and autonomous systems involving hardware-software integration and real-time data.
                                 I enjoy projects where rules and behavior are explicit, from gameplay mechanics to control systems.
                                 I'm currently seeking Game Developer or Software Engineer roles on game-focused teams that value strong engineering fundamentals.
                             </h1>
