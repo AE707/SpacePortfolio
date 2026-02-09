@@ -6,7 +6,7 @@ A modern, animated personal portfolio built with **Next.js**, **Tailwind CSS**, 
 
 ## 🌌 Live Website
 
-👉 https://alaaelghoul.com  <!-- update if needed -->
+👉 [https://alaaelghoul.com](https://space-portfolio-ae7.vercel.app/)  <!-- update if needed -->
 
 ---
 
@@ -112,6 +112,7 @@ SpacePortfolio/
 
 ```bash
 git clone https://github.com/AE707/SpacePortfolio.git
+```
 
 2️⃣ **Navigate into the project**
 
@@ -139,9 +140,9 @@ Import the repo in Vercel
 ## 📬 Contact
 GitHub: https://github.com/AE707
 
-LinkedIn: (add your LinkedIn link)
+LinkedIn: [(add your LinkedIn link)](https://www.linkedin.com/in/alaaelghoul/)
 
-Email: (add your email)
+Email: (AE7_07@outlook.com)
 
 ## ⭐ Support
 If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
