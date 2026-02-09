@@ -23,7 +23,17 @@ const HeroContent = () => {
                     ref={ref}
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
-                    className="flex md:flex-row flex-col-reverse items-center justify-center gap-5 md:gap-10 px-4 md:px-20 mt-10 md:mt-20 w-full z-20"
+className="
+flex md:flex-row flex-col-reverse items-center justify-center
+gap-5 md:gap-10 px-4 md:px-20 w-full z-20
+
+pt-[32vh]      /* mobile only */
+sm:pt-[38vh]   /* big phones */
+
+md:pt-0 md:mt-20   /* keep desktop EXACTLY the same */
+"
+
+
                 >
                     <div className="h-full w-full md:w-3/6 flex flex-col gap-3 md:gap-5 justify-center text-center md:text-start">
                         {/* On mobile: heading first (order-1), then badges (order-2). On md: badges first (order-1), heading second (order-2) */}
@@ -37,7 +47,7 @@ const HeroContent = () => {
                                         variants={slideInFromTop}
                                         className="Welcome-box py-[8px] px-[12px] border-[1px] border-[#7042f88b] opacity-[0.9]"
                                     >
-                                        <BsStars className="text-[#b49bff] mr-[10px] h-5 w-10" />
+                                        <BsStars className="text-[#b49bff] mr-[0px] h-5 w-10" />
                                         <h1 className="Welcome-text text-[13px]">
                                             Game Developer
                                         </h1>
@@ -54,7 +64,7 @@ const HeroContent = () => {
                                         variants={slideInFromTop}
                                         className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
                                     >
-                                        <BsStars className="text-[#b49bff] mr-[10px] h-5 w-10" />
+                                        <BsStars className="text-[#b49bff] mr-[0px] h-5 w-10" />
                                         <h1 className="Welcome-text text-[13px]">
                                             Software Engineer
                                         </h1>
@@ -70,7 +80,7 @@ const HeroContent = () => {
                                         variants={slideInFromTop}
                                         className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
                                     >
-                                        <BsStars className="text-[#b49bff] mr-[10px] h-5 w-10" />
+                                        <BsStars className="text-[#b49bff] mr-[0px] h-5 w-10" />
                                         <h1 className="Welcome-text text-[13px]">
                                             Embedded Systems & IoT Development
                                         </h1>
@@ -86,7 +96,8 @@ const HeroContent = () => {
                                     initial="hidden"
                                     animate={inView ? "visible" : "hidden"}
                                     variants={slideInFromLeft(0.5)}
-                                    className="flex flex-col gap-4 md:gap-6 mt-20 md:mt-6 text-3xl md:text-5xl font-bold text-white max-w-full md:max-w-[600px] w-auto h-auto z-20 order-1 md:order-2"
+                                    className="flex flex-col gap-4 md:gap-6 text-3xl md:text-5xl font-bold text-white max-w-full md:max-w-[600px] w-auto h-auto z-20 order-1 md:order-2"
+
                                 >
                                     <span>
                                         Coding

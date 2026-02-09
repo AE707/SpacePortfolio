@@ -2,13 +2,14 @@
 
 import { Socials } from "@/constants";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
 
 const navLinks = [
     { href: "#about", label: "About Me" },
     { href: "#skills", label: "Skills" },
     { href: "#projects", label: "Projects" },
+    { href : "#experience", label: "Experience" },
     { href: "#contact", label: "Reach Me" },
 ];
 
@@ -98,7 +99,7 @@ const Navbar = () => {
 
         {/* Blur overlay + menu via portal so fixed covers viewport (navbar's backdrop-blur would trap them) */}
         {mounted && mobileMenuOpen && createPortal(
-            <div className="md:hidden fixed left-0 right-0 bottom-0 z-[40]" style={{ top: 65 }}>
+            <div className="md:hidden fixed left-0 right-0 bottom-0 z-[60]" style={{ top: 65 }}>
                 {/* Blur overlay - covers entire content area */}
                 <div
                     className="absolute inset-0 backdrop-blur-xl bg-black/30"
