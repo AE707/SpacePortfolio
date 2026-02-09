@@ -104,3 +104,43 @@ SpacePortfolio/
 │   └── AE_Resume.pdf
 │
 └── styles/
+
+## ⚙️ Getting Started Locally
+
+1️⃣ **Clone the repository**
+
+```bash
+git clone https://github.com/AE707/SpacePortfolio.git
+
+2️⃣ **Navigate into the project**
+
+cd SpacePortfolio
+
+3️⃣ **Install dependencies**
+
+npm install
+
+4️⃣ **Start the development server**
+
+npm run dev
+
+Then open in your browser: http://localhost:3000
+
+## 🚀 Deployment
+This project is optimized for deployment on Vercel.
+
+Push the project to GitHub
+
+Import the repo in Vercel
+
+## Deploy 🎉
+
+## 📬 Contact
+GitHub: https://github.com/AE707
+
+LinkedIn: (add your LinkedIn link)
+
+Email: (add your email)
+
+## ⭐ Support
+If you like this project, consider giving it a ⭐ on GitHub — it helps a lot!
