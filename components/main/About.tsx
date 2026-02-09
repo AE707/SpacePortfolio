@@ -45,21 +45,29 @@ const About = () => {
                         >
 {/* RESPONSIVE AVATAR + VIDEO WRAPPER */}
 <div className="relative flex items-center justify-center 
-                w-[clamp(320px,80vw,750px)] 
-                h-[clamp(320px,80vw,750px)]">
+                w-[clamp(260px,75vw,750px)] 
+h-[clamp(260px,75vw,750px)]">
 
-    {/* VIDEO HALO */}
-    <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
-        <video
-            loop
-            muted
-            autoPlay
-            playsInline
-            preload="auto"
-            className="w-full h-full object-contain scale-[1.5] opacity-70"
-            src="/encryption.webm"
-        />
-    </div>
+   
+{/* VIDEO HALO */}
+<div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden rounded-full">
+    <video
+        loop
+        muted
+        autoPlay
+        playsInline
+        preload="auto"
+        src="/encryption.webm"
+        className="
+            w-full h-full object-contain opacity-70
+            scale-[1.15]      /* mobile */
+            sm:scale-[1.25]   /* tablet */
+            md:scale-[1.35]   /* desktop */
+            lg:scale-[1.45]   /* large screens */
+        "
+    />
+</div>
+
 
     {/* AVATAR */}
     <div className="relative z-10 rounded-full overflow-hidden 
@@ -108,7 +116,7 @@ const About = () => {
                             initial="hidden"
                             animate={inView ? "visible" : "hidden"}
                             variants={slideInFromBottom}
-                            className="Welcome-box px-4 sm:px-[15px] w-[90%] md:w-3/4 py-5 md:py-[20px] z-[20] mb-4 border border-[#7042f88b] opacity-[0.9]"
+                            className="Welcome-box px-4 sm:px-[15px] w-[90%] md:w-3/4 py-10 md:py-[20px] z-[20] mb-4 border border-[#7042f88b] opacity-[0.9]"
                         >
                             <h1 className="Welcome-text text-sm sm:text-base w-full text-justify">
                                 I'm a Computer Engineering Master's graduate focused on gameplay programming, software engineering, and system design.

@@ -91,3 +91,15 @@ html {
         width: 6px;
     }
 }
+
+.video-wrapper {
+  width: 100%;
+  max-width: 520px;      /* desktop size */
+  padding: 0 16px;       /* breathing space on mobile */
+}
+
+.about-video {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
