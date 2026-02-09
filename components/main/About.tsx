@@ -46,7 +46,7 @@ const About = () => {
 {/* RESPONSIVE AVATAR + VIDEO WRAPPER */}
 <div className="relative flex items-center justify-center 
                 w-[clamp(260px,75vw,750px)] 
-h-[clamp(260px,75vw,750px)]">
+">
 
    
 {/* VIDEO HALO */}
@@ -60,10 +60,10 @@ h-[clamp(260px,75vw,750px)]">
         src="/encryption.webm"
         className="
             w-full h-full object-contain opacity-70
-            scale-[1.15]      /* mobile */
-            sm:scale-[1.25]   /* tablet */
-            md:scale-[1.35]   /* desktop */
-            lg:scale-[1.45]   /* large screens */
+            scale-[1.7]      /* mobile */
+            sm:scale-[1.5]   /* tablet */
+            md:scale-[4]   /* desktop */
+            lg:scale-[2.4]   /* large screens */
         "
     />
 </div>
@@ -116,7 +116,7 @@ h-[clamp(260px,75vw,750px)]">
                             initial="hidden"
                             animate={inView ? "visible" : "hidden"}
                             variants={slideInFromBottom}
-                            className="Welcome-box px-4 sm:px-[15px] w-[90%] md:w-3/4 py-10 md:py-[20px] z-[20] mb-4 border border-[#7042f88b] opacity-[0.9]"
+                            className="Welcome-box px-4 sm:px-[15px] w-[90%] md:w-3/4 py-4 md:py-[20px] z-[20] mb-4 border border-[#7042f88b] opacity-[0.9]"
                         >
                             <h1 className="Welcome-text text-sm sm:text-base w-full text-justify">
                                 I'm a Computer Engineering Master's graduate focused on gameplay programming, software engineering, and system design.
