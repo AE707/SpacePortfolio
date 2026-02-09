@@ -104,6 +104,7 @@ SpacePortfolio/
 │   └── AE_Resume.pdf
 │
 └── styles/
+```
 
 ## ⚙️ Getting Started Locally
 
