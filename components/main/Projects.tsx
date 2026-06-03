@@ -11,6 +11,47 @@ const Projects = () => {
       </h1>
 
       <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4 md:px-10">
+         {/* FinTech Automation */}
+        <ProjectCard
+          src={["/1.webp", "/2.webp", "/dash.png", "/que.png", "/supa.png"]}
+          staticImage="/dash.png"
+          title="FinTech Automation"
+          description="A production-grade fintech automation portfolio built with Retool, n8n, and Supabase — demonstrating real-world transaction monitoring, multi-tier approval workflows, and event queue processing."
+          link="https://github.com/AE707/Automation-ROI-calculator"
+          tools={[
+            { name: "Unity", icon: "/Unity-Dark.svg" },
+            { name: "C#", icon: "/CS.svg" },
+            { name: "git", icon: "/Git.svg" },
+          ]}
+        />
+        
+        {/* Tooling Decision Framework (Decision Engine) */}
+        <ProjectCard
+          src={["/uno.png", "/dos.png"]}
+          staticImage="/uno.png"
+          title="Decision Engine"
+          description="Designed to help teams make informed decisions on whether to Build, Buy, or Retool their software solutions based on a set of weighted criteria."
+          link="https://github.com/AE707/Automation-ROI-calculator"
+          tools={[
+            { name: "Unity", icon: "/Unity-Dark.svg" },
+            { name: "C#", icon: "/CS.svg" },
+            { name: "git", icon: "/Git.svg" },
+          ]}
+        />
+        
+        {/* Automation ROI Calculator */}
+        <ProjectCard
+          src={["/first.png", "/second.png", "/third.png"]}
+          staticImage="/first.png"
+          title="Automation ROI Calculator"
+          description="A fully interactive, mobile-responsive React application for calculating automation return on investment."
+          link="https://github.com/AE707/Automation-ROI-calculator"
+          tools={[
+            { name: "Unity", icon: "/Unity-Dark.svg" },
+            { name: "C#", icon: "/CS.svg" },
+            { name: "git", icon: "/Git.svg" },
+          ]}
+        />
         {/* FlarpyBloarb */}
         <ProjectCard
           src="https://raw.githubusercontent.com/AE707/FlarpyBloarb/main/Assets/Screenshots/GamePlay.gif"

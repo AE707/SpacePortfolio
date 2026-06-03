@@ -119,11 +119,11 @@ const About = () => {
                             className="Welcome-box px-4 sm:px-[15px] w-[90%] md:w-3/4 py-4 md:py-[20px] z-[20] mb-4 border border-[#7042f88b] opacity-[0.9]"
                         >
                             <h1 className="Welcome-text text-sm sm:text-base w-full text-justify">
-                                I'm a Computer Engineering Master's graduate focused on gameplay programming, software engineering, and system design.
-                                I build Unity games and interactive systems with deterministic, state-driven logic and clean, scalable architecture.
-                                I also have experience with embedded and autonomous systems involving hardware-software integration and real-time data.
-                                I enjoy projects where rules and behavior are explicit, from gameplay mechanics to control systems.
-                                I'm currently seeking Game Developer or Software Engineer roles on game-focused teams that value strong engineering fundamentals.
+AI Specialist and automation engineer with hands-on experience building LLM-powered applications, n8n automation
+pipelines, and Claude/OpenAI API-integrated products. My work spans prompt engineering, AI-driven UI development
+in React, and end-to-end workflow automation with a consistent focus on output quality and clean architecture.
+Background: Computer Engineer. System Architect. Clean architecture, deterministic systems, production-ready code.
+If it ships, it has to work well
                             </h1>
                         </motion.div>
                     )}

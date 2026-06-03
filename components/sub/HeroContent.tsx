@@ -49,6 +49,23 @@ md:pt-0 md:mt-20   /* keep desktop EXACTLY the same */
                                     >
                                         <BsStars className="text-[#b49bff] mr-[0px] h-5 w-10" />
                                         <h1 className="Welcome-text text-[13px]">
+                                            AI & Automation Engenieer 
+                                        </h1>
+                                    </motion.div>
+                                )}
+                            </InView>
+                            
+                            <InView triggerOnce={false}>
+                                {({ inView, ref }) => (
+                                    <motion.div
+                                        ref={ref}
+                                        initial="hidden"
+                                        animate={inView ? "visible" : "hidden"}
+                                        variants={slideInFromTop}
+                                        className="Welcome-box py-[8px] px-[12px] border-[1px] border-[#7042f88b] opacity-[0.9]"
+                                    >
+                                        <BsStars className="text-[#b49bff] mr-[0px] h-5 w-10" />
+                                        <h1 className="Welcome-text text-[13px]">
                                             Game Developer
                                         </h1>
                                     </motion.div>

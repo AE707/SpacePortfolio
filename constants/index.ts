@@ -289,12 +289,6 @@ export const DevTools = [
     },
 
 
-    {
-        skill_name: "ChatGPT",
-        Image: "/chatgpt.svg",
-        width: 50,
-        height: 50,
-    },
 
 ];
 
@@ -340,5 +334,56 @@ export const Mobile = [
         Image: "/SQLite.svg",
         width: 50,
         height: 50,
+    },
+];
+    export const Automation = [
+    {
+        skill_name: "Claude",
+        Image: "/Claude.webp",
+        width: 50,
+        height: 50,
+    },
+        {
+        skill_name: "Gemini",
+        Image: "/gemini.webp",
+        width: 50,
+        height: 50,
+    },
+        {
+        skill_name: "Supabase",
+        Image: "/icons8-supabase-48.png",
+        width: 55,
+        height: 55,
+    },
+    {
+        skill_name: "n8n",
+        Image: "/n8n.webp",
+        width: 40,
+        height: 40,
+    },
+        {
+        skill_name: "ChatGPT",
+        Image: "/chatgpt.svg",
+        width: 50,
+        height: 50,
+    },
+
+    {
+        skill_name: "Ollama",
+        Image: "/ollama.webp",
+        width: 50,
+        height: 50,
+    },
+    {
+        skill_name: "Perplexity",
+        Image: "/perplexity.webp",
+        width: 50,
+        height: 50,
+    },
+            {
+        skill_name: "Retool",
+        Image: "/retool-seeklogo.png",
+        width: 100,
+        height: 100,
     },
 ];
